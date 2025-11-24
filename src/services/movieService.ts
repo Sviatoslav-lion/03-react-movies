@@ -1,6 +1,6 @@
 // src/services/movieService.ts
-import axios, { AxiosResponse } from 'axios';
-import { Movie } from '../types/movie';
+import type { AxiosResponse } from 'axios';
+import type { Movie } from '../types/movie';
 
 const BASE_URL = 'https://api.themoviedb.org/3';
 const IMAGE_BASE = 'https://image.tmdb.org/t/p';

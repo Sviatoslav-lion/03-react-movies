@@ -1,7 +1,7 @@
 // src/components/MovieModal/MovieModal.tsx
 import React, { useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom';
-import { Movie } from '../../types/movie';
+import type { Movie } from '../../types/movie';
 import { getImageUrl } from '../../services/movieService';
 import css from './MovieModal.module.css';
 

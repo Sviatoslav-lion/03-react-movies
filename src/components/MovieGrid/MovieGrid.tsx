@@ -1,6 +1,6 @@
 // src/components/MovieGrid/MovieGrid.tsx
 import React from 'react';
-import { Movie } from '../../types/movie';
+import type { Movie } from '../../types/movie';
 import { getImageUrl } from '../../services/movieService';
 import css from './MovieGrid.module.css';
 
