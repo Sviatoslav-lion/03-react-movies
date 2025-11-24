@@ -1,5 +1,6 @@
 // src/components/SearchBar/SearchBar.tsx
-import React, { FormEvent, useRef } from 'react';
+import React, { useRef } from 'react';
+import type { FormEvent } from 'react';
 import styles from './SearchBar.module.css';
 import toast from 'react-hot-toast';
 
