@@ -1,6 +1,5 @@
 // src/services/movieService.ts
 import axios from 'axios';
-import type { AxiosResponse } from 'axios';
 import type { Movie } from '../types/movie';
 
 const BASE_URL = 'https://api.themoviedb.org/3';
@@ -38,8 +37,12 @@ export async function fetchMovies(params: FetchMoviesParams): Promise<TmdbSearch
     },
   };
 
-  const res: AxiosResponse<TmdbSearchResponse> = await axios.get(`${BASE_URL}/search/movie`, config);
-  return res.data;
+  const { data } = await axios.get<TmdbSearchResponse>(
+    `${BASE_URL}/search/movie`,
+    config
+  );
+
+  return data;
 }
 
 export function getImageUrl(path: string | null, size: 'w500' | 'original' = 'w500') {

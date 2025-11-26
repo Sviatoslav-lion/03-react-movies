@@ -58,7 +58,7 @@ const App: React.FC = () => {
   return (
     <div className={styles.app}>
       <Toaster />
-      <SearchBar onSubmit={handleSearch} />
+      <SearchBar onSearch={handleSearch} />
       {loading && <Loader />}
       {error && <ErrorMessage />}
       {!loading && !error && movies.length > 0 && (
